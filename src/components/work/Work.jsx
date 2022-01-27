@@ -3,7 +3,7 @@ import "./work.scss"
 
 export default function work() {
   return (
-  <div className="work">
+  <div className="work" id="work">
 test
   </div>
   )

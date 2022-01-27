@@ -1,12 +1,14 @@
 .app{
     height: 100vh;
-
+// creating sections
     .sections{
         width: 100%;
         height: calc(100vh - 70px);
         background-color: red;
         position: relative;
         top: 70px;
+    // scrolling changes and snap align
+        scroll-behavior: smooth;
         scroll-snap-type: y mandatory;
         scrollbar-width: none; // only for firefox
         &::-webkit-scrollbar{
