@@ -5,11 +5,14 @@ import Work from "./components/work/Work"
 import Testimonials from "./components/testimonials/Testimonials"
 import Contact from "./components/contact/Contact"
 import "./app.scss"
+import { useState } from "react";
 
 function App() {
+  // state change for navMenu open active vs notactive
+  const [menuOpen, setMenuOpen] = useState(false)
   return (
     <div className="app">
-      <Navbar/>
+      <Navbar menuOpen = {menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro/>
         <Portfolio/>
