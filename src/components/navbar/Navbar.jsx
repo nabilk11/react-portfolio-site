@@ -5,7 +5,7 @@ import Mail from '@material-ui/icons/Mail';
 
 export default function Navbar() {
   return (
-  <div className="navbar" id="navbar">
+  <div className="navbar active" id="navbar">
       <div className="wrapper">
         <div className="left">
             <a href="#intro" className="logo">nabil.</a>
@@ -20,7 +20,13 @@ export default function Navbar() {
         </div>
             
         
-        <div className="right">right side container</div>
+        <div className="right">
+        <div className="navMenu">
+          <span className="lineOne"></span>
+          <span className="lineTwo"></span>
+          <span className="lineThree"></span>
+        </div>
+        </div>
 
 
 
