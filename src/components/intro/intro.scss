@@ -1,3 +1,70 @@
 .intro{
-    background-color: lightcoral;
+    background-color: whitesmoke;
+    display: flex;
+
+
+    .left{
+        flex: 0.5;
+        overflow: hidden;
+
+
+        .imgContainer{
+            width: 700px;
+            height: 700px;
+            background-color: lightcoral;
+            border-radius: 50%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            float: right;
+
+            img{
+                height: 80%;
+
+            }
+        }
+    }
+
+    .right{
+        flex: 0.5;
+        position: relative;
+
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            padding-left:50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: 60px;
+                margin: 10px 0;
+                color: lightcoral;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+            }
+
+        }
+        a{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+
+            img{
+                width: 70px;
+                animation: arrowBlink 2s infinite;
+            }
+
+            @keyframes arrowBlink {
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+    }
 }
