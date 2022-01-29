@@ -1,5 +1,12 @@
-# react-portfolio-site
+# React-Portfolio-Site
+## By: Nabil Khan
 This is an early attempt at creating a highly responsive, well-styled, portfolio style website using react.
+
+# User Stories
+## As a user....
+As a user I should be able to access my portfolio site on a fully deployed URL.
+As a user I can click my name/logo and be brought to the main intro 'page'/card.
+AAU I should be able to smoothly scroll down the page without abrupt page changes.
 
 # Getting Started with Create React App
 
@@ -71,3 +78,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
