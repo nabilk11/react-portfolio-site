@@ -1,8 +1,12 @@
 import React from 'react';
 import "./portfolio.scss"
 import PortfolioNav from '../PortfolioNav/PortfolioNav'
+import { useState } from 'react';
 
 export default function Portfolio() {
+
+  //active state for portfolioNav
+  const [selected, setSelected] = useState("featured")
 // portfolio nav list items array
 const list = [
   {
@@ -33,7 +37,11 @@ const list = [
     <h1>Portfolio</h1>
     <ul>
       {list.map(item => {
-       return <PortfolioNav title={item.title}/>
+       return <PortfolioNav title={item.title} 
+       active={selected === item.id}
+       setSelected={setSelected}
+       id={item.id}
+       />
       })}
     </ul>
     <div className="container">
