@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./intro.scss"
+import { init } from 'ityped'
+import {  useRef } from 'react';
 
 export default function Intro() {
+// useRef hook
+  const textRef = useRef();
+
+  // ityped functional component
+  useEffect(() => {
+    init(textRef.current, {
+      showCursor: false,
+      strings: [" Leader", " Introvert"],
+    })
+
+  }, [])
   return (
   <div className="intro" id="intro"> 
   <div className="left">
@@ -13,7 +26,7 @@ export default function Intro() {
     <div className="wrapper">
       <h2>Hello! I'm</h2>
       <h1>Nabil Khan!</h1>
-      <h3>Full Stack Software Engineer | Leader | Introvert<span></span></h3>
+      <h3>Full Stack Software Engineer |<span ref={textRef}></span></h3>
     </div>
     <a href="#portfolio">
       <img src="assets/downarrow.jpg" alt="" />
